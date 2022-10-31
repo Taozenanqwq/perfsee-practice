@@ -49,10 +49,10 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 // 全局方法
 app.config.globalProperties.$filters = {
-  orderMap(status) {
+  orderMap (status) {
     return orderStatus[status] || '未知状态'
   },
-  prefix(url) {
+  prefix (url) {
     if (url && url.startsWith('http')) {
       return url
     } else {
